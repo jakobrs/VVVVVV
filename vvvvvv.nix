@@ -1,7 +1,7 @@
-{ pkgs, stdenv, lib, system, SDL2, SDL2_mixer, cmake }:
+{ pkgs, stdenv, lib, SDL2, SDL2_mixer, cmake }:
 
 let
-  isDarwin = system == "x86_64-darwin";
+  isDarwin = stdenv.system == "x86_64-darwin";
   frameworks = pkgs.darwin.apple_sdk.frameworks;
 
 in {
