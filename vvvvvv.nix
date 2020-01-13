@@ -21,9 +21,9 @@ in {
     '';
 
     meta = {
-      description = "VVVVVV by Terry Cavanagh";
-      homepage = "https://github.com/TerryCavanagh/VVVVVV";
-
+      description = "A game by Terry Cavanagh";
+      homepage = "thelettervsixtim.es";
+      #license = lib.licenses.unfreeRedistributable;
       platforms = [ "x86_64-linux" "x86_64-darwin" ];
     };
   };
