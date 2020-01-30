@@ -12,7 +12,8 @@ in {
     src = [ ./desktop_version ./third_party ];
     sourceRoot = "desktop_version";
 
-    buildInputs = [ SDL2 SDL2_mixer cmake ]
+    nativeBuildInputs = [ cmake ];
+    buildInputs = [ SDL2 SDL2_mixer ]
       ++ lib.optional isDarwin (with frameworks; [ Foundation ]);
 
     installPhase = ''
